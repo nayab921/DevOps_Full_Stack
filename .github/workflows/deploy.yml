@@ -20,10 +20,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             # Navigate to project folder
-            cd ~/DevOps_Full_Stack
-            
-            # Pull latest changes
-            git pull origin main
-            
+            cd ~/DevOps_Full_Stack  
             # Restart containers (Docker Compose)
             docker compose up -d --build

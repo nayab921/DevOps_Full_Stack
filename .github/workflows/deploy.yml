@@ -17,4 +17,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd ~/DevOps_Full_Stack
+            git pull origin main
             docker compose up -d --build

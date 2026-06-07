@@ -16,8 +16,5 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            # Navigate to project folder
             cd ~/DevOps_Full_Stack
-            
-            # Restart containers only
             docker compose up -d --build

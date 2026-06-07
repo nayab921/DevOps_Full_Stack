@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Dependencies install karne ke liye
 COPY package*.json ./
-RUN npm install
+RUN npm install --build-from-source
 
 # Saara code copy karne ke liye (SQLite ki file bhi isi mein copy ho jayegi)
 COPY . .
